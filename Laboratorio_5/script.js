@@ -25,7 +25,6 @@ for(var i = 0 ; i <= inventario.length-1 ; i++ ){
 console.log('2. Ejercicios con Funciones');
 console.log('2.1. Función para Cálculo de Inventario');
 
-var total1=inventario [0][1]* inventario[0][2];
 console.log(total1);
 
 function calcularValorTotal(matriz){
@@ -34,6 +33,7 @@ function calcularValorTotal(matriz){
     for (var i = 0 ; i <= matriz.length-1 ; i++) {
         //console.log("Estoy accediendo a la lista num" + i + ":");
         //console.log(matriz[i]) ;
+        console.log(matriz[i][1]*matriz[i][2]);
         total+= matriz[i][1]*matriz[i][2];
     }
     return "este es el total: "+total;

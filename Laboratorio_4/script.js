@@ -43,3 +43,20 @@ console.log("parseInt: " + parseInt("2"))
 console.log("parseFloat: " + parseFloat("3.5"))
 console.log("String(): " + String(12))
 
+console.log('---------------')
+const temperatureFahrenheit=[32,68,95,104,212];
+console.log(temperatureFahrenheit);
+const temperatureCelsius= temperatureFahrenheit.map(temperature => (temperature-32)*(5/9));
+
+console.log(temperatureCelsius);
+let suma=0;
+
+temperatureCelsius.forEach(temperature=>suma+=temperature);
+console.log(suma);
+
+const animales=['elephant','ant', 'bison','dog','camel'];
+console.log(animales);
+console.log(animales.slice(2));
+console.log("inicio y fin: " + animales.slice(2,-1));
+
+
