@@ -50,14 +50,17 @@ let pais1=new paises("argentina",24,50.456,['buenos aires', 'cordoba']);
 let otroPais=new paises('brasil', 49, 78.765,['rio','sau pablo','brasilia'])
 
 
-//console.log(pais1.incrementarPoblacion(2));
-//console.log(pais1.densidad())
+console.log(pais1.incrementarPoblacion(2));
+console.log(otroPais.incrementarPoblacion(10))
 
-//console.log(pais1.compararArea(otroPais));
-//console.log(otroPais.compararArea(pais1));
+console.log(pais1.densidad())
+console.log(otroPais.densidad())
+
+console.log(pais1.compararArea(otroPais));
+console.log(otroPais.compararArea(pais1));
 
 console.log(pais1.mostrarCiudades())
 console.log(otroPais.mostrarCiudades())
 
-//console.log(pais1.mostrarCiudadesPorLetra());
-//console.log(otroPais.mostrarCiudadesPorLetra());
+console.log(pais1.mostrarCiudadesPorLetra());
+console.log(otroPais.mostrarCiudadesPorLetra());
