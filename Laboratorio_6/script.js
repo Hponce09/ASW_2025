@@ -13,7 +13,8 @@ class paises{
     }
 
     densidad(){
-        return this.poblacion/this.area;
+        let densidadCalculada=this.poblacion;
+        return densidadCalculada/=this.area;
     }
 
     compararArea(otroPais) {
@@ -32,9 +33,10 @@ class paises{
     }
 
     mostrarCiudadesPorLetra(){
-        this.ciudades.forEach((element,) => {
-
-            element.split('').forEach(caracter =>{
+        this.ciudades.forEach((element) => {
+            let letter=element.trim().split("")
+                console.log()
+            letter.forEach(caracter =>{
                 console.log(caracter)
             })
             
@@ -53,8 +55,8 @@ let otroPais=new paises('brasil', 49, 78.765,['rio','sau pablo','brasilia'])
 console.log(pais1.incrementarPoblacion(2));
 console.log(otroPais.incrementarPoblacion(10))
 
-console.log(pais1.densidad())
-console.log(otroPais.densidad())
+console.log("densidad " + pais1.densidad())
+console.log("densidad " + otroPais.densidad())
 
 console.log(pais1.compararArea(otroPais));
 console.log(otroPais.compararArea(pais1));
