@@ -12,7 +12,7 @@ function mensaje2(){
 boton.addEventListener('click',mensaje1)
 boton.addEventListener('click',mensaje2)
 
-let tecla = document.getElementById('main-body')
+let tecla = document.getElementById('campo-texto')
 
 function keyevent(e){
     var tipo = e.type
@@ -30,10 +30,15 @@ function validar(e){
     var tecla = e.key
 
     console.log(tecla)
-    if(tecla >= 0 && tecla <= 9){
+    //otra forma
+    if(!isNaN(tecla)){
         e.preventDefault()
-        alert("Por favor usa sólo letras")
     }
+    //otra forma
+   // if(tecla >= 0 && tecla <= 9){
+     //   e.preventDefault()
+     //   alert("Por favor usa sólo letras")
+   // }
 
 }
 
