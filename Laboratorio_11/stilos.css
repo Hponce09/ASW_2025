@@ -1,0 +1,21 @@
+body{
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+.tablero_principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2px;
+    background-color: red;
+    width: 300px;
+    height: 300px;
+}
+
+div{
+    background-color: aqua;
+}
