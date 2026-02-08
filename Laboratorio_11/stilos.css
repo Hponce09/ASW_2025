@@ -1,21 +1,44 @@
-body{
-    height: 100%;
-    min-height: 100vh;
-    margin: 0;
-    display: grid;
-    place-items: center;
+body {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
 }
 
-.tablero_principal{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 2px;
-    background-color: red;
-    width: 300px;
-    height: 300px;
+.tablero_principal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2px;
+  background-color: red;
+  width: 300px;
+  height: 300px;
 }
 
-div{
-    background-color: aqua;
+.celda {
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.celda.playerX {
+  color: rgb(101, 101, 244);
+}
+
+.celda.playerO {
+  color: rgba(244, 101, 101, 0.982);
+}
+
+.celda:hover:not(.ocupada) {
+  background-color: lightblue;
+}
+
+.celda.ocupada {
+  cursor: not-allowed;
 }
