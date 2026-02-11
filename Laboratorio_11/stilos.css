@@ -4,6 +4,8 @@ body {
   margin: 0;
   display: grid;
   place-items: center;
+
+  transition: background 0.1s ease-out;
 }
 
 .tablero_principal {
@@ -41,4 +43,8 @@ body {
 
 .celda.ocupada {
   cursor: not-allowed;
+}
+
+.visual-dinamic {
+  background-color: hsl(var(--tono), 70%, 60%) !important;
 }
