@@ -8,6 +8,12 @@ body {
   transition: background 0.1s ease-out;
 }
 
+#turn {
+  font:
+    bold italic 2rem "Arial",
+    sans-serif;
+}
+
 .tablero_principal {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
