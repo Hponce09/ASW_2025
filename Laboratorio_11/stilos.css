@@ -19,13 +19,13 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 2px;
-  background-color: red;
+  background-color: #0f3460;
   width: 300px;
   height: 300px;
 }
 
 .celda {
-  background-color: aqua;
+  background-color: #1a1a2e;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,15 +36,15 @@ body {
 }
 
 .celda.playerX {
-  color: rgb(101, 101, 244);
+  color: #00d0ff;
 }
 
 .celda.playerO {
-  color: rgba(244, 101, 101, 0.982);
+  color: #e94560;
 }
 
 .celda:hover:not(.ocupada) {
-  background-color: lightblue;
+  background-color: rgb(8, 79, 102);
 }
 
 .celda.ocupada {
